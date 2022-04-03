@@ -158,3 +158,8 @@ Es una técnica de diseño rápido que pretende involucrar tanto a los expertos 
 3. Asociar la entidad/agregado en el que se ejecuta el comando que produce además el Domain Event resultante.
 
 ![Comandos](images/agregados.jpeg)
+
+4. Trazar límites y líneas con ﬂechas para representar el ﬂujo en la superﬁcie del modelado.
+
+5. Identiﬁcar las distintas vistas que los usuarios necesitarán para llevar a cabo sus acciones y roles importantes para diversos usuarios.
+
