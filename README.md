@@ -60,3 +60,19 @@ Si se intenta uniﬁcar los tres tipos de pólizas en una sola para dar respuest
 ![Arquitectura](images/arquitectura-1.jpeg)
 ![Arquitectura](images/arquitectura-2.jpeg)
 
+Adaptadores de entrada, como los controladores de la interfaz de usuario, controladores API tipo REST.
+Servicios de aplicación que organizan casos de uso y gestionan transacciones.
+Modelo de dominio.
+Adaptadores de salida, tales como la gestión de persistencia y los productores de mensajes.
+
+## Diseño estratégico con subdominios
+
+#### Tipos de subdominios
+- Core Domain
+- Subdominio de soporte
+- Subdominio genérico
+
+## Diseño estratégico con Context Mapping
+
+El dominio principal tiene que integrarse con otros Bounded Contexts. Esta integración se conoce en DDD como Context Mapping.
+
