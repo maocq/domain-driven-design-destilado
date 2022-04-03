@@ -138,3 +138,23 @@ Tener cuidado con la pérdida de lógica del negocio en los servicios de aplicac
 - A menudo, el lenguaje de las abstracciones incorrectas se abrirá camino incluso en la interfaz de usuario, y causará confusión para los usuarios.
 - Nunca se podrá abordar previamente todas las necesidades futuras.
 
+
+## Event Storming
+Es una técnica de diseño rápido que pretende involucrar tanto a los expertos del dominio como a los desarrolladores en un proceso de aprendizaje acelerado. Se enfoca en el negocio y en sus procesos en lugar de hacerlo en sustantivos y datos.
+
+1. Desarrollar el proceso de negocio mediante una serie de Domain Events.
+
+![Eventos](images/eventos.jpeg)
+
+- Se encontrarán puntos problemáticos en un proceso de negocio nuevo o existente. Marcarlos evidentemente con una nota adhesiva púrpura/roja y un texto que explique por qué es un problema.
+- Cada Domain Event que causa la ejecución de un proceso debe capturarse y nombrarse en una nota adhesiva color lila.
+
+2. Crear los comandos que causan cada Domain Event.
+
+![Comandos](images/comandos.jpeg)
+
+- Si existe un rol de usuario especíﬁco que realice una acción especíﬁca, y es importante determinarlo, es posible colocar una nota adhesiva amarilla brillante.
+
+3. Asociar la entidad/agregado en el que se ejecuta el comando que produce además el Domain Event resultante.
+
+![Comandos](images/agregados.jpeg)
