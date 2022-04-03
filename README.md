@@ -128,4 +128,13 @@ Tener cuidado con la pérdida de lógica del negocio en los servicios de aplicac
 > _**La programación funcional promueve la separación de datos y el comportamiento. Los datos se diseñan como estructuras de datos inmutables o tipos de registros, y el comportamiento se implementa como funciones puras que operan en registros inmutables de tipos especíﬁcos**_
 
 
+### Elegir las abstracciones con sumo cuidado
+###### Problemas
+
+- El lenguaje del modelo de software no coincide con el modelo mental de los expertos del dominio.
+- El nivel de abstracción es demasiado alto, y habrá problemas graves cuando comience a modelar los detalles de cada uno de los tipos individuales.
+- Esto conducirá a la creación de casos especiales en cada una de las clases y es probable que produzca una jerarquía de clases compleja con enfoques generales para problemas explícitos.
+- Habrá mucho más código del necesario, porque se intenta resolver un problema sin solución que no debe importar en primer lugar.
+- A menudo, el lenguaje de las abstracciones incorrectas se abrirá camino incluso en la interfaz de usuario, y causará confusión para los usuarios.
+- Nunca se podrá abordar previamente todas las necesidades futuras.
 
