@@ -65,6 +65,8 @@ Servicios de aplicación que organizan casos de uso y gestionan transacciones.
 Modelo de dominio.
 Adaptadores de salida, tales como la gestión de persistencia y los productores de mensajes.
 
+(Detalle de capas de arquitectura el capítulo 4 de Implementing Domain-Driven Design.)
+
 ## Diseño estratégico con subdominios
 
 #### Tipos de subdominios
@@ -97,3 +99,22 @@ Un servicio abierto (Open Host Service) deﬁne un protocolo o interfaz que da a
 
 #### Idioma publicado
 Es un lenguaje de intercambio de información que posibilita consumo sencillo y traducción de varios Bounded Contexts.
+
+
+## Diseño táctico con agregados
+
+
+##### Entity
+Una entidad modela una cosa individual y cada una tiene una identidad única que puede distinguir su individualidad de todas las demás entidades del mismo o diferente tipo.
+
+##### Agregado
+Se compone de una o más entidades y objetos de valor.
+
+**Cada agregado forma un límite de consistencia transaccional**. Esto signiﬁca que dentro de un único agregado, todas las partes compuestas deben ser coherentes, de acuerdo con las reglas de negocio.
+
+###### Reglas básicas de los agregados
+1. Proteger las invariantes del negocio dentro de límites del agregado.
+2. Diseñar agregados simples.
+3. Referenciar otros agregados usando únicamente su identidad.
+4. Actualizar otros agregados usando Eventual Consistency.
+
