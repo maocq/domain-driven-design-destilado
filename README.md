@@ -76,3 +76,24 @@ Adaptadores de salida, tales como la gestión de persistencia y los productores 
 
 El dominio principal tiene que integrarse con otros Bounded Contexts. Esta integración se conoce en DDD como Context Mapping.
 
+###### Alianza
+Cada equipo es responsable de un Bounded Context, y éstos crean una coalición para alinear los dos equipos a un conjunto de objetivos dependientes
+
+###### Kernel compartido
+Representado por la intersección de dos Bounded Contexts, describe la relación entre dos o más equipos que comparten un modelo pequeño aunque común.
+
+###### Relación cliente-proveedor
+El proveedor está en la ups tream (zona alta) de la dependencia, y el cliente está en la downstream.
+
+###### Relación conformista
+Cuando hay equipos upstream y downstream, y el equipo upstream no tiene ninguna motivación para apoyar las necesidades especíﬁcas del equipo downstream.
+
+#### Capa anticorrupción
+Es la relación más defensiva en el Context Mapping: el equipo downstream crea una capa de traducción entre su Ubiquitous Language (modelo) y el Ubiquitous
+Language (modelo) que está upstream.
+
+#### Servicio abierto
+Un servicio abierto (Open Host Service) deﬁne un protocolo o interfaz que da acceso al Bounded Context mediante un conjunto de servicios.
+
+#### Idioma publicado
+Es un lenguaje de intercambio de información que posibilita consumo sencillo y traducción de varios Bounded Contexts.
