@@ -125,5 +125,7 @@ Tener cuidado con la pérdida de lógica del negocio en los servicios de aplicac
 
 ##### Programación funcional
 
-> **La programación funcional promueve la separación de datos y el comportamiento. Los datos se diseñan como estructuras de datos inmutables o tipos de registros, y el comportamiento se implementa como funciones puras que operan en registros inmutables de tipos especíﬁcos**
+> _**La programación funcional promueve la separación de datos y el comportamiento. Los datos se diseñan como estructuras de datos inmutables o tipos de registros, y el comportamiento se implementa como funciones puras que operan en registros inmutables de tipos especíﬁcos**_
+
+
 
