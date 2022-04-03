@@ -118,3 +118,12 @@ Se compone de una o más entidades y objetos de valor.
 3. Referenciar otros agregados usando únicamente su identidad.
 4. Actualizar otros agregados usando Eventual Consistency.
 
+
+#### Modelamiento de agregados
+Tener cuidado con la pérdida de lógica del negocio en los servicios de aplicación por encima del modelo de dominio.
+
+
+##### Programación funcional
+
+> **La programación funcional promueve la separación de datos y el comportamiento. Los datos se diseñan como estructuras de datos inmutables o tipos de registros, y el comportamiento se implementa como funciones puras que operan en registros inmutables de tipos especíﬁcos**
+
